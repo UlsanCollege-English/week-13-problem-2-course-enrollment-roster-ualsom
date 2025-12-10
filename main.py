@@ -10,7 +10,7 @@ def build_roster(registrations):
 
     for student_id, course_id in registrations:
         if course_id not in roster:
-            roster[course_id] = set()   # use set to avoid duplicates
+            roster[course_id] = set()  # use set to avoid duplicates
         roster[course_id].add(student_id)
 
     # Convert sets to sorted lists
